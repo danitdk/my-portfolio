@@ -41,7 +41,7 @@ export default function ContactSection() {
         {/* Centered Typography Header */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center justify-center gap-3.5 mb-5">
-            <div className="w-5 h-5 rounded-full bg-slate-800/80 border border-slate-600 flex items-center justify-center">
+            <div className="w-5 h-5 rounded-full bg-slate-800/80 border border-white/25 flex items-center justify-center">
               <div className="w-2 h-2 bg-white rounded-full" />
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white tracking-tight">
@@ -59,9 +59,9 @@ export default function ContactSection() {
             {/* Email Card */}
             <a
               href="mailto:danielteshome335@gmail.com"
-              className="group flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-slate-800 hover:border-cyan-500/50 hover:shadow-[0_0_20px_rgba(6,182,212,0.15)] transition-all"
+              className="group flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-white/20 hover:border-white/40 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-all"
             >
-              <div className="w-12 h-12 rounded-xl bg-cyan-950/40 border border-cyan-800/40 flex items-center justify-center text-cyan-400 group-hover:scale-105 transition-transform">
+              <div className="w-12 h-12 rounded-xl bg-cyan-950/40 border border-white/20 flex items-center justify-center text-cyan-400 group-hover:scale-105 transition-transform">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -79,9 +79,9 @@ export default function ContactSection() {
               href="https://t.me/daniTKD3"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-slate-800 hover:border-violet-500/50 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)] transition-all"
+              className="group flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-white/20 hover:border-white/40 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-all"
             >
-              <div className="w-12 h-12 rounded-xl bg-violet-950/40 border border-violet-800/40 flex items-center justify-center text-violet-400 group-hover:scale-105 transition-transform">
+              <div className="w-12 h-12 rounded-xl bg-violet-950/40 border border-white/20 flex items-center justify-center text-violet-400 group-hover:scale-105 transition-transform">
                 {/* Official Telegram Airplane Icon */}
                 <svg className="w-5.5 h-5.5 transform -translate-x-[1px] translate-y-[1px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 2L2 9.3l7 3.2 4.2-4.2 1 1-4.2 4.2 3.2 7L21 2z" />
@@ -98,9 +98,9 @@ export default function ContactSection() {
             {/* Phone Card */}
             <a
               href="tel:+251935368595"
-              className="group flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-slate-800 hover:border-emerald-500/50 hover:shadow-[0_0_20px_rgba(16,185,129,0.15)] transition-all"
+              className="group flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-white/20 hover:border-white/40 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transition-all"
             >
-              <div className="w-12 h-12 rounded-xl bg-emerald-950/40 border border-emerald-800/40 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform">
+              <div className="w-12 h-12 rounded-xl bg-emerald-950/40 border border-white/20 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
@@ -114,8 +114,8 @@ export default function ContactSection() {
             </a>
 
             {/* Location Card */}
-            <div className="flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-slate-800">
-              <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400">
+            <div className="flex items-center gap-4 p-5 rounded-2xl bg-[#080c14]/60 border border-white/20 hover:border-white/40 transition-all">
+              <div className="w-12 h-12 rounded-xl bg-slate-900 border border-white/20 flex items-center justify-center text-slate-300">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -129,14 +129,14 @@ export default function ContactSection() {
           </div>
 
           {/* Right: Modern Connected Form */}
-          <div className="lg:col-span-7 rounded-3xl bg-[#080c14]/70 border border-slate-800 p-7 sm:p-8 backdrop-blur-md relative">
+          <div className="lg:col-span-7 rounded-3xl bg-[#080c14]/70 border border-white/20 p-7 sm:p-8 backdrop-blur-md relative shadow-xl shadow-black/40">
             {submitted && (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="absolute inset-0 bg-[#080c14] rounded-3xl p-8 flex flex-col items-center justify-center text-center z-20"
+                className="absolute inset-0 bg-[#080c14] border border-white/20 rounded-3xl p-8 flex flex-col items-center justify-center text-center z-20"
               >
-                <div className="w-16 h-16 bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 rounded-full flex items-center justify-center mb-4">
+                <div className="w-16 h-16 bg-cyan-500/10 border border-white/20 text-cyan-400 rounded-full flex items-center justify-center mb-4">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -147,7 +147,7 @@ export default function ContactSection() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="px-6 py-2.5 bg-slate-900 border border-slate-800 text-white hover:bg-slate-800 rounded-xl text-xs font-semibold transition-all cursor-pointer"
+                  className="px-6 py-2.5 bg-slate-900 border border-white/20 text-white hover:border-white/40 hover:bg-slate-800 rounded-xl text-xs font-semibold transition-all cursor-pointer"
                 >
                   Send Another Message
                 </button>
@@ -163,7 +163,7 @@ export default function ContactSection() {
                     name="name"
                     required
                     placeholder="e.g. Alex Mercer"
-                    className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm transition-all"
+                    className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-white/40 focus:ring-1 focus:ring-white/40 text-sm transition-all"
                   />
                 </div>
                 <div>
@@ -173,7 +173,7 @@ export default function ContactSection() {
                     name="email"
                     required
                     placeholder="alex@example.com"
-                    className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm transition-all"
+                    className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-white/40 focus:ring-1 focus:ring-white/40 text-sm transition-all"
                   />
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function ContactSection() {
                   name="_subject"
                   required
                   placeholder="Project Inquiry / Opportunity"
-                  className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm transition-all"
+                  className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-white/40 focus:ring-1 focus:ring-white/40 text-sm transition-all"
                 />
               </div>
 
@@ -196,7 +196,7 @@ export default function ContactSection() {
                   name="message"
                   required
                   placeholder="Tell me about your project goals..."
-                  className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-[#050810] border border-white/15 text-white placeholder-slate-500 focus:outline-none focus:border-white/40 focus:ring-1 focus:ring-white/40 text-sm transition-all resize-none"
                 />
               </div>
 

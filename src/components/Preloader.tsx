@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const welcomeWord = ["W", "E", "L", "C", "O", "M", "E"];
+const welcomeLetters = ["W", "e", "l", "c", "o", "m", "e"];
 
 export default function Preloader({ onComplete }: { onComplete?: () => void }) {
   const [stage, setStage] = useState<number>(1);
@@ -84,23 +84,24 @@ export default function Preloader({ onComplete }: { onComplete?: () => void }) {
                 : {}
             }
           >
-            {/* Subtle Display Glow */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-cyan-950/20 via-neutral-950 to-violet-950/20 pointer-events-none" />
+            {/* Subtle Display Glow & Ambient Backlight */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-white/[0.03] via-neutral-950 to-slate-400/[0.03] pointer-events-none" />
+            <div className="absolute w-44 h-44 bg-white/[0.04] rounded-full blur-2xl pointer-events-none" />
 
-            {/* Smooth WELCOME Character Reveal */}
+            {/* Smooth WELCOME Character Reveal (Matching Hero Typography) */}
             {stage >= 3 && (
-              <div className="relative z-10 flex space-x-2 sm:space-x-3">
-                {welcomeWord.map((char, index) => (
+              <div className="relative z-10 flex items-center justify-center font-serif font-bold text-white tracking-tight text-4xl sm:text-6xl md:text-7xl">
+                {welcomeLetters.map((char, index) => (
                   <motion.span
                     key={index}
-                    initial={{ opacity: 0, y: 14, scale: 0.8 }}
+                    initial={{ opacity: 0, y: 14, scale: 0.85 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{
                       duration: 0.45,
-                      delay: index * 0.28,
+                      delay: index * 0.2,
                       ease: [0.25, 1, 0.5, 1],
                     }}
-                    className="font-mono text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-400 to-violet-400 drop-shadow-[0_0_15px_rgba(56,189,248,0.7)] inline-block will-change-transform"
+                    className="inline-block drop-shadow-[0_0_30px_rgba(255,255,255,0.45)] will-change-transform"
                   >
                     {char}
                   </motion.span>

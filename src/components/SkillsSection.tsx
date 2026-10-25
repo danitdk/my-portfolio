@@ -55,7 +55,7 @@ export default function SkillsSection() {
         {/* Centered Typography Header */}
         <div className="flex flex-col items-center text-center mb-20">
           <div className="flex items-center gap-3.5 mb-5">
-            <div className="w-5 h-5 rounded-full bg-slate-800/80 border border-slate-600 flex items-center justify-center">
+            <div className="w-5 h-5 rounded-full bg-slate-800/80 border border-white/25 flex items-center justify-center">
               <div className="w-2 h-2 bg-white rounded-full" />
             </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white tracking-tight">
@@ -74,7 +74,7 @@ export default function SkillsSection() {
               key={idx}
               whileHover={{ y: -6, scale: 1.015 }}
               transition={{ duration: 0.3 }}
-              className="relative rounded-3xl border border-transparent bg-[#080c14]/45 backdrop-blur-md p-8 overflow-hidden hover:shadow-[0_15px_30px_rgba(0,0,0,0.4)] transition-all flex flex-col justify-between"
+              className="relative rounded-3xl border border-white/20 hover:border-white/40 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] bg-[#080c14]/60 backdrop-blur-md p-8 overflow-hidden transition-all flex flex-col justify-between"
             >
               {/* Top ambient glow on hover */}
               <div className={`absolute -top-12 -left-12 w-32 h-32 bg-gradient-to-tr ${cat.accent} rounded-full blur-2xl opacity-40`} />
@@ -82,7 +82,7 @@ export default function SkillsSection() {
               <div>
                 {/* Visual Header */}
                 <div className="flex items-center gap-4 mb-6 relative z-10">
-                  <div className={`w-11 h-11 rounded-2xl border ${cat.iconBg} flex items-center justify-center`}>
+                  <div className={`w-11 h-11 rounded-2xl border border-white/20 ${cat.iconBg} flex items-center justify-center`}>
                     {cat.icon}
                   </div>
                   <div>
@@ -96,7 +96,7 @@ export default function SkillsSection() {
                   {cat.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="inline-flex items-center gap-1.5 text-xs font-mono font-medium bg-[#0c111f]/90 border border-slate-800 text-slate-200 px-3.5 py-2 rounded-full hover:border-slate-700 transition-colors"
+                      className="inline-flex items-center gap-1.5 text-xs font-mono font-medium bg-[#0c111f]/90 border border-white/15 text-slate-200 px-3.5 py-2 rounded-full hover:border-white/35 hover:shadow-[0_0_10px_rgba(255,255,255,0.08)] transition-all"
                     >
                       <span className="text-[10px] text-slate-400">✦</span> {skill}
                     </span>

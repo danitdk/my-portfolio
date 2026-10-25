@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040814" />
+      <stop offset="50%" stop-color="#081426" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="230" r="220" fill="url(#glow)" />
+
+  <!-- Grid Accents -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="500" />
+    <line x1="250" y1="0" x2="250" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="550" y1="0" x2="550" y2="500" />
+    <line x1="700" y1="0" x2="700" y2="500" />
+    <line x1="0" y1="125" x2="800" y2="125" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="375" x2="800" y2="375" />
+  </g>
+
+  <!-- Medical Cross / Equipment Shield Icon -->
+  <g transform="translate(400, 195)">
+    <!-- Outer Shield / Hexagon -->
+    <polygon points="0,-70 60,-35 60,35 0,70 -60,35 -60,-35" fill="#082032" stroke="#22d3ee" stroke-width="2.5" stroke-opacity="0.7" />
+    <!-- Medical Cross -->
+    <path d="M-12,-32 H12 V-12 H32 V12 H12 V32 H-12 V12 H-32 V-12 H-12 Z" fill="url(#cyanGrad)" />
+  </g>
+
+  <!-- Title Text -->
+  <text x="400" y="325" text-anchor="middle" font-family="serif" font-weight="bold" font-size="28" fill="#ffffff" letter-spacing="1">
+    PAULOS ZENEBE
+  </text>
+  <text x="400" y="358" text-anchor="middle" font-family="monospace" font-weight="600" font-size="14" fill="#38bdf8" letter-spacing="3">
+    IMPORT &amp; EXPORT • MEDICAL PLATFORM
+  </text>
+  <text x="400" y="385" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">
+    hospital-property.vercel.app
+  </text>
+</svg>

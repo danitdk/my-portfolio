@@ -22,7 +22,7 @@ export default function AboutSection() {
           className="flex items-center justify-center gap-3 mb-6"
         >
           {/* Circular accent icon */}
-          <div className="w-5 h-5 rounded-full bg-slate-700/60 border border-slate-500/50 flex items-center justify-center">
+          <div className="w-5 h-5 rounded-full bg-slate-800/80 border border-white/25 flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-white" />
           </div>
 
@@ -52,9 +52,9 @@ export default function AboutSection() {
             viewport={{ once: true }}
             whileHover={{ y: -4 }}
             transition={{ duration: 0.25 }}
-            className="rounded-2xl border border-slate-800/80 bg-[#06080d]/80 backdrop-blur-md p-7 hover:border-slate-700 transition-all shadow-md group"
+            className="rounded-2xl border border-white/20 bg-[#06080d]/80 backdrop-blur-md p-7 hover:border-white/40 hover:shadow-[0_0_25px_rgba(255,255,255,0.08)] transition-all shadow-md group"
           >
-            <div className="w-10 h-10 rounded-xl border border-slate-800 bg-slate-900 flex items-center justify-center text-white mb-5 group-hover:border-slate-600 transition-colors">
+            <div className="w-10 h-10 rounded-xl border border-white/20 bg-slate-900 flex items-center justify-center text-white mb-5 group-hover:border-white/40 group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] transition-colors">
               <span className="font-mono font-bold text-sm">&lt;/&gt;</span>
             </div>
             <h3 className="text-xl font-serif font-bold text-white mb-2.5">
@@ -72,9 +72,9 @@ export default function AboutSection() {
             viewport={{ once: true }}
             whileHover={{ y: -4 }}
             transition={{ duration: 0.25, delay: 0.1 }}
-            className="rounded-2xl border border-slate-800/80 bg-[#06080d]/80 backdrop-blur-md p-7 hover:border-slate-700 transition-all shadow-md group"
+            className="rounded-2xl border border-white/20 bg-[#06080d]/80 backdrop-blur-md p-7 hover:border-white/40 hover:shadow-[0_0_25px_rgba(255,255,255,0.08)] transition-all shadow-md group"
           >
-            <div className="w-10 h-10 rounded-xl border border-slate-800 bg-slate-900 flex items-center justify-center text-white mb-5 group-hover:border-slate-600 transition-colors">
+            <div className="w-10 h-10 rounded-xl border border-white/20 bg-slate-900 flex items-center justify-center text-white mb-5 group-hover:border-white/40 group-hover:shadow-[0_0_10px_rgba(255,255,255,0.1)] transition-colors">
               <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>

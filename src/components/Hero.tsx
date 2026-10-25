@@ -134,7 +134,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-slate-800/80 bg-slate-900/40 backdrop-blur-md mb-8 hover:border-slate-500/35 hover:bg-slate-800/50 transition-all cursor-pointer shadow-sm group"
+          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-white/20 bg-slate-900/40 backdrop-blur-md mb-8 hover:border-white/40 hover:bg-slate-800/50 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all cursor-pointer shadow-sm group"
         >
           <div className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -182,7 +182,7 @@ export default function Hero() {
 
           <a
             href="#resume"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-slate-800 bg-slate-900/50 backdrop-blur-md text-slate-300 font-medium text-sm sm:text-base hover:bg-slate-800/80 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 bg-slate-900/50 backdrop-blur-md text-slate-300 font-medium text-sm sm:text-base hover:border-white/40 hover:bg-slate-800/80 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all"
           >
             <svg
               className="w-4 h-4 text-slate-400"
